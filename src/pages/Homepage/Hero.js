@@ -15,10 +15,10 @@ function Hero() {
             free.
           </p>
           <div className="">
-            <button className="border-2 cursor-pointer rounded-md text-sm font-semibold shadow-md text-grayish-blue border-grayish-blue hover:border-soft-blue hover:text-soft-blue px-6 py-3 mr-5">
+            <button className="border-2 transition-all duration-150 cursor-pointer rounded-md text-sm font-semibold shadow-md text-white bg-soft-blue border-soft-blue hover:border-soft-blue hover:text-soft-blue hover:bg-white px-6 py-3 mr-5">
               Get it on Chrome
             </button>
-            <button className="border-2 cursor-pointer rounded-md text-sm font-semibold shadow-md text-grayish-blue border-grayish-blue hover:border-soft-blue hover:text-soft-blue px-6 py-3 mr-5">
+            <button className="border-2 transition-all duration-150 cursor-pointer rounded-md text-sm font-semibold shadow-md text-very-dark-blue bg-[#F7F7F7] border-[#F7F7F7] hover:border-very-dark-blue hover:bg-white px-6 py-3 mr-5">
               Get it on Firefox
             </button>
           </div>

@@ -36,7 +36,7 @@ function Features() {
   const [tab, setTab] = useState(0);
   return (
     <section className="flex justify-center relative overflow-hidden">
-      <div className="container pt-32 flex gap-5 flex-col items-center text-center">
+      <div className="container my-[8rem] flex gap-5 flex-col items-center text-center">
         <header className="w-[35rem]">
           <h1 className="text-4xl font-semibold text-very-dark-blue">
             Features

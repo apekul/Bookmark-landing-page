@@ -12,7 +12,7 @@ function FeatureTab({ item }) {
           {item.title}
         </h1>
         <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
-        <button className="px-5 py-4 mt-2 rounded-md bg-soft-blue text-white font-[500]">
+        <button className="px-5 py-3 mt-2 rounded-md bg-soft-blue text-white font-[500] border-2 border-soft-blue hover:bg-white hover:text-soft-blue transition-all duration-150">
           More Info
         </button>
       </header>
