@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 9.5rem;
+  padding-right: 9.5rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
