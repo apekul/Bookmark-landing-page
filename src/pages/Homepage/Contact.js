@@ -26,7 +26,10 @@ function Contact() {
   };
 
   return (
-    <section className="flex justify-center bg-soft-blue text-white mt-[4rem]">
+    <section
+      className="flex justify-center bg-soft-blue text-white mt-[4rem]"
+      id="Contact"
+    >
       <div className="container xl:w-[53rem] py-20 xl:h-[26rem] flex gap-5 flex-col justify-start items-center text-center">
         <header>
           <p className="uppercase font-light">

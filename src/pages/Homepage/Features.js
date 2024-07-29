@@ -35,7 +35,10 @@ const featuresItems = [
 function Features() {
   const [tab, setTab] = useState(0);
   return (
-    <section className="flex justify-center relative overflow-hidden">
+    <section
+      className="flex justify-center relative overflow-hidden"
+      id="Features"
+    >
       <div className="container my-[5rem] xl:my-[8rem] flex gap-5 flex-col items-center text-center">
         <header className="xl:w-[35rem]">
           <h1 className="text-4xl font-semibold text-very-dark-blue">

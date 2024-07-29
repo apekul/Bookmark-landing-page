@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 function MobileNav({ items, setMobileNav }) {
   return (
@@ -41,6 +41,7 @@ function MobileNav({ items, setMobileNav }) {
           {items.map((navItem, index) => (
             <li
               key={index}
+              onClick={() => setMobileNav(false)}
               className="text-white border-t-2 border-grayish-blue border-opacity-20 py-5 tracking-widest text-xl text-opacity-80"
             >
               <a href={navItem.path}>{navItem.name}</a>

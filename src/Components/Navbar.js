@@ -3,9 +3,9 @@ import bookMarkLogo from "../Assets/images/logo-bookmark.svg";
 import MobileNav from "./MobileNav";
 
 const navigationItems = [
-  { name: "FEATURES", path: "/" },
-  { name: "PRICING", path: "/" },
-  { name: "CONTACT", path: "/" },
+  { name: "FEATURES", path: "#Features" },
+  { name: "PRICING", path: "#Pricing" },
+  { name: "CONTACT", path: "#Contact" },
 ];
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
             </li>
           ))}
           <li className="cursor-pointer border-2 border-soft-red bg-soft-red text-white rounded-md px-6 py-2 hover:bg-white hover:text-soft-red transition-all duration-125">
-            <a href="/">LOGIN</a>
+            <button>LOGIN</button>
           </li>
         </ul>
       </div>
