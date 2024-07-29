@@ -35,7 +35,7 @@ function Questions() {
     <section className="flex justify-center">
       <div className="container w-[53rem] py-20 flex gap-5 flex-col items-center text-center">
         <header>
-          <h1 className="text-4xl font-semibold text-very-dark-blue">
+          <h1 className="text-3xl xl:text-4xl font-semibold text-very-dark-blue">
             Frequently Asked Questions
           </h1>
           <p className="py-8 text-grayish-blue text-[1.10rem]">
@@ -50,8 +50,10 @@ function Questions() {
               className="py-5 border-t-2 cursor-pointer select-none text-very-dark-blue hover:text-soft-red"
               onClick={() => updateShowAnswer(index)}
             >
-              <div className="flex justify-between pr-5">
-                <p className=" font-semibold">{question.name}</p>
+              <div className="flex justify-between xl:pr-5">
+                <p className="text-sm xl:text-base font-semibold">
+                  {question.name}
+                </p>
                 <button
                   className={`${
                     showAnswer === index
@@ -75,7 +77,7 @@ function Questions() {
                 </button>
               </div>
               {showAnswer === index && (
-                <p className="pt-5 text-grayish-blue text-[1.10rem]">
+                <p className="pt-5 text-grayish-blue text-sm xl:text-[1.10rem]">
                   {question.answer}
                 </p>
               )}

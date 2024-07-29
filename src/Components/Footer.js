@@ -9,8 +9,11 @@ const navigationItems = [
 function Footer() {
   return (
     <footer className="flex justify-center bg-very-dark-blue text-white text-xs py-5">
-      <div className="container flex justify-between">
-        <ul className="flex gap-10 items-center" role="menubar">
+      <div className="container flex flex-col sm:flex-row justify-between">
+        <ul
+          className="flex flex-col sm:flex-row gap-10 items-center"
+          role="menubar"
+        >
           <li>
             <svg
               width="148"
@@ -43,7 +46,7 @@ function Footer() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-10 scale-75">
+        <div className="flex items-center justify-center pt-10 sm:pt-0 gap-10 scale-75">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

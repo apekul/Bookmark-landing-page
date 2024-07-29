@@ -16,8 +16,8 @@ function Download() {
   return (
     <section className="flex justify-center relative overflow-hidden">
       <div className="container my-[8rem] flex flex-col items-center justify-center">
-        <header className="w-[35rem] text-center">
-          <h1 className="text-4xl font-semibold text-very-dark-blue">
+        <header className="xl:w-[35rem] text-center">
+          <h1 className="text-3xl xl:text-4xl font-semibold text-very-dark-blue">
             Download the extension
           </h1>
           <p className="py-8 text-grayish-blue text-[1.10rem]">
@@ -25,12 +25,15 @@ function Download() {
             you’ve got a favourite you’d like us to prioritize.
           </p>
         </header>
-        <ul className="flex gap-8 mt-5">
+        <ul className="flex flex-col xl:flex-row gap-5 xl:gap-8 mt-5">
           {downloadItems.map((item, index) => (
             <li
               key={index}
-              className={`py-5 w-[18rem] h-[23rem] flex flex-col items-center justify-between bg-white rounded-lg shadow-lg `}
-              style={{ marginTop: index > 0 && `${3 * index}rem` }}
+              className={` py-5 w-[18rem] h-[23rem] flex flex-col items-center justify-between bg-white rounded-lg shadow-lg 
+              ${index === 1 && "xl:mt-[3rem]"}
+              ${index === 2 && "xl:mt-[6rem]"}
+              `}
+              // style={{ marginTop: index > 0 && `${3 * index}rem` }}
             >
               <div className="flex items-center flex-col pt-5">
                 <img

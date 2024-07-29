@@ -13,21 +13,21 @@ const featuresItems = [
     name: "Simple Bookmarking",
     title: "Bookmark in one click",
     description:
-      "Organize your bookmarks however you like. Our <br/> simple drag-and-drop interface gives you complete <br/> control over how you manage your favourite sites.",
+      "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
     img: tab1Img,
   },
   {
     name: "Speedy Searching",
     title: "Intelligent search",
     description:
-      "Our powerful search feature will help you find saved <br/> sites in no time at all. No need to trawl through all of <br/> your bookmarks.",
+      "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
     img: tab2Img,
   },
   {
     name: "Easy Sharing",
     title: "Share your bookmarks",
     description:
-      "Easily share your bookmarks and collections with <br/> others. Create a shareable link that you can send at <br/> the click of a button.",
+      "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
     img: tab3Img,
   },
 ];
@@ -36,8 +36,8 @@ function Features() {
   const [tab, setTab] = useState(0);
   return (
     <section className="flex justify-center relative overflow-hidden">
-      <div className="container my-[8rem] flex gap-5 flex-col items-center text-center">
-        <header className="w-[35rem]">
+      <div className="container my-[5rem] xl:my-[8rem] flex gap-5 flex-col items-center text-center">
+        <header className="xl:w-[35rem]">
           <h1 className="text-4xl font-semibold text-very-dark-blue">
             Features
           </h1>
@@ -47,15 +47,15 @@ function Features() {
             so you can access them on the go.
           </p>
         </header>
-        <ul className="flex mb-[3rem] border-b-2 items-center justify-center">
+        <ul className="flex mb-[3rem] gap-5 xl:gap-0 flex-col xl:flex-row xl:border-b-2 items-center justify-center">
           {featuresItems.map((featureItem, index) => (
             <li
               key={index}
               onClick={() => setTab(index)}
-              className={`px-5 w-[16rem] transition-all duration-150 pb-5 border-b-4 cursor-pointer text-very-dark-blue hover:text-soft-red ${
+              className={`px-5 w-[14rem] xl:w-[16rem] transition-all duration-150 pb-3 border-b-4 cursor-pointer text-very-dark-blue hover:text-soft-red ${
                 index === tab
                   ? "border-red-500 border-solid"
-                  : "border-transparent"
+                  : "border-gray-200 xl:border-transparent border-solid"
               }`}
             >
               {featureItem.name}
