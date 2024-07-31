@@ -4,7 +4,7 @@
 
 ## Overview
 
-This design is a landing page that closely resembles the provided design.
+This is a landing page that closely resembles the provided design.
 
 ## The Challenge
 
